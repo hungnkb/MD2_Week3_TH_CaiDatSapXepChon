@@ -5,7 +5,7 @@ export class SelectionSort {
         for (let i = 0; i < list.length; i++) {
             let max = list[i];
             let maxIndex = i;
-            for (let j = i; j < list.length - 1; j++) {
+            for (let j = i; j < list.length; j++) {
                 if (list[j] > max) {
                     max = list[j];
                     maxIndex = j;
@@ -14,7 +14,7 @@ export class SelectionSort {
             let temp = list[i];
             list[i] = max;
             list[maxIndex] = temp;
-            console.log(list[maxIndex])
+           
         }
 
         return list;
